@@ -1,9 +1,9 @@
 -- init
-local library = loadstring(game:HttpGet("http://staygod.club/lua-library/sgh"))()
-local staygod = library.new("StayGod | Club V2", 5013109572)
+local library = loadstring(game:HttpGet("https://iblis.club/Library/UI/script-hub.css"))()
+local iblis = library.new("Iblis.club | UI Library", 5013109572)
 
 -- first page
-local page = staygod:addPage("Main", 5012544693)
+local page = iblis:addPage("Main", 5012544693)
 local section1 = page:addSection("Main")
 local section2 = page:addSection("Misc")
 
@@ -17,12 +17,12 @@ section1:addTextbox("Notification", "Default", function(value, focusLost)
 print("Input", value)
 
 if focusLost then
-staygod:Notify("Example Loaded", value)
+iblis:Notify("Example Loaded", value)
 end
 end)
 
 section2:addKeybind("Menu Keybind", Enum.KeyCode.Insert, function()
-staygod:toggle()
+iblis:toggle()
 end, function()
 print("Menu Keybind Changed")
 end)
@@ -37,9 +37,9 @@ section2:addButton("Button")
 
 -- second page
 -- changed section
-local theme = staygod:addPage("Theme", 5012544693)
+local theme = iblis:addPage("Theme", 5012544693)
 local colors = theme:addSection("Colors")
 section2:addButton("Button")
 
 -- load
-staygod:SelectPage(staygod.pages[1], true)
+iblis:SelectPage(iblis.pages[1], true)
